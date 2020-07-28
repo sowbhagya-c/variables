@@ -1,0 +1,735 @@
+
+1) Run a script and demonstrate if else condition?
+
+PS C:\WINDOWS\system32> $book ="storybook"
+PS C:\WINDOWS\system32> $pen ="cello"
+PS C:\WINDOWS\system32> if ($book -eq "book") {'I read a wonderful book yesterday'} elseif($pen -eq "cello") {'I have a cello pen'}                                                                                                             I have a cello pen
+PS C:\WINDOWS\system32> 
+
+output: I have a cello pen
+
+
+2) find the type of available datatype in python.
+>>>print("hello")
+hello
+integers
+>>> a = 2
+>>> b = 3
+>>> print(a+b)
+5
+strings
+>>> name = "lakshmi"
+>>> fname = "sowbhagya"
+>>> print (fname + name)
+sowbhagyalakshmi  
+Boolean 
+>>> p = "float"
+>>> print(bool(p))
+True
+>>>
+Float data type
+>>> num = 3.14
+>>> num1 = 5.14
+>>> print(num +num1)
+8.28
+>>>
+3) Work on string concatenation
+
+>>> p = "Favorite book "
+>>> q ="is story book"
+>>> r =". It's cost is "
+>>> u = "120"
+>>> print(p+q+r+u)
+Favorite book is story book. It's cost is 120
+
+4) Work on different variables in python
+ s= 40
+>>> print(s)
+40
+>>> L ="lakshmi"
+>>> print(L)
+lakshmi
+
+5) Run a script and demonstrate adding two integer and then convert to Hexadecimal.
+
+PS C:\WINDOWS\system32> $r=20                                                                                           PS C:\WINDOWS\system32> $f=30                                                                                           PS C:\WINDOWS\system32> $r+$f                                                                                           50
+PS C:\WINDOWS\system32> [convert]::ToString(50,2)                                                                       110010
+PS C:\WINDOWS\system32>                                                                                                 
+
+6) Write a program on simple calculator in python
+  
+# Function to add two numbers  
+def add(num1, num2): 
+    return num1 + num2 
+  
+# Function to subtract two numbers  
+def subtract(num1, num2): 
+    return num1 - num2 
+  
+# Function to multiply two numbers 
+def multiply(num1, num2): 
+    return num1 * num2 
+  
+# Function to divide two numbers 
+def divide(num1, num2): 
+    return num1 / num2
+print("Please select operation -\n" \ 
+        "1. Add\n" \ 
+        "2. Subtract\n" \ 
+        "3. Multiply\n" \ 
+        "4. Divide\n") 
+  
+  
+# Take input from the user  
+select = int(input("Select operations form 1, 2, 3, 4 :")) 
+  
+number_1 = int(input("Enter first number: ")) 
+number_2 = int(input("Enter second number: ")) 
+  
+if select == 1: 
+    print(number_1, "+", number_2, "=", 
+                    add(number_1, number_2)) 
+  
+elif select == 2: 
+    print(number_1, "-", number_2, "=", 
+                    subtract(number_1, number_2)) 
+  
+elif select == 3: 
+    print(number_1, "*", number_2, "=", 
+                    multiply(number_1, number_2)) 
+  
+elif select == 4: 
+    print(number_1, "/", number_2, "=", 
+                    divide(number_1, number_2)) 
+else: 
+    print("Invalid input") 
+
+
+
+
+
+7) Functions in python
+# Function to add two numbers 
+def add(a,b):
+...     return a+b
+...
+>>> def sub(a,b):
+...     return a-b
+...
+>>> def mul(a,b):
+...     return a*b
+...
+>>> def div(a,b):
+...     return a/b
+...
+>>> add(10,20)
+30
+>>> sub(10,20)
+-10
+>>> mul(10,20)
+200
+>>> div(a,b)
+0.5
+
+8) String functions in python
+ 
+stringname = "lakshmi"
+>>> print(stringname)
+lakshmi
+>>> stringname[3:6]
+'shm'
+>>> print(stringname + stringname[3:5])
+lakshmish
+>>> stringname.upper()
+'LAKSHMI'
+>>> stringname.lower()
+'lakshmi'
+
+
+
+9) Run a script and document in notepad about commands like Get-Command, Get-Date, Write-Host,Get-Process,Get-alias
+
+PS C:\WINDOWS\system32> Get-Date                                                                                        
+28 July 2020 23:28:02
+PS C:\WINDOWS\system32>
+
+PS C:\WINDOWS\system32> Write-Host "hi! Iam lakshmi"           
+hi! Iam lakshmi
+PS C:\WINDOWS\system32> PS C:\WINDOWS\system32> Get-command                                                                                     
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           Add-AppPackage                                     2.0.1.0    Appx
+Alias           Add-AppPackageVolume                               2.0.1.0    Appx
+Alias           Add-AppProvisionedPackage                          3.0        Dism
+Alias           Add-ProvisionedAppPackage                          3.0        Dism
+Alias           Add-ProvisionedAppxPackage                         3.0        Dism
+Alias           Add-ProvisioningPackage                            3.0        Provisioning
+Alias           Add-TrustedProvisioningCertificate                 3.0        Provisioning
+Alias           Apply-WindowsUnattend                              3.0        Dism
+Alias           Disable-PhysicalDiskIndication                     2.0.0.0    Storage
+Alias           Disable-StorageDiagnosticLog                       2.0.0.0    Storage
+Alias           Dismount-AppPackageVolume                          2.0.1.0    Appx
+Alias           Enable-PhysicalDiskIndication                      2.0.0.0    Storage
+Alias           Enable-StorageDiagnosticLog                        2.0.0.0    Storage
+Alias           Flush-Volume                                       2.0.0.0    Storage
+Alias           Get-AppPackage                                     2.0.1.0    Appx
+Alias           Get-AppPackageDefaultVolume                        2.0.1.0    Appx
+Alias           Get-AppPackageLastError                            2.0.1.0    Appx
+Alias           Get-AppPackageLog                                  2.0.1.0    Appx
+Alias           Get-AppPackageManifest                             2.0.1.0    Appx
+Alias           Get-AppPackageVolume                               2.0.1.0    Appx
+Alias           Get-AppProvisionedPackage                          3.0        Dism
+Alias           Get-DiskSNV                                        2.0.0.0    Storage
+Alias           Get-PhysicalDiskSNV                                2.0.0.0    Storage
+Alias           Get-ProvisionedAppPackage                          3.0        Dism
+Alias           Get-ProvisionedAppxPackage                         3.0        Dism
+Alias           Get-StorageEnclosureSNV                            2.0.0.0    Storage
+Alias           Initialize-Volume                                  2.0.0.0    Storage
+Alias           Mount-AppPackageVolume                             2.0.1.0    Appx
+Alias           Move-AppPackage                                    2.0.1.0    Appx
+Alias           Move-SmbClient                                     2.0.0.0    SmbWitness
+Alias           Optimize-AppProvisionedPackages                    3.0        Dism
+Alias           Optimize-ProvisionedAppPackages                    3.0        Dism
+Alias           Optimize-ProvisionedAppxPackages                   3.0        Dism
+Alias           Remove-AppPackage                                  2.0.1.0    Appx
+Alias           Remove-AppPackageVolume                            2.0.1.0    Appx
+Alias           Remove-AppProvisionedPackage                       3.0        Dism
+Alias           Remove-EtwTraceSession                             1.0.0.0    EventTracingManagement
+Alias           Remove-ProvisionedAppPackage                       3.0        Dism
+Alias           Remove-ProvisionedAppxPackage                      3.0        Dism
+Alias           Remove-ProvisioningPackage                         3.0        Provisioning
+Alias           Remove-TrustedProvisioningCertificate              3.0        Provisioning
+Alias           Set-AppPackageDefaultVolume                        2.0.1.0    Appx
+Alias           Set-AppPackageProvisionedDataFile                  3.0        Dism
+Alias           Set-AutologgerConfig                               1.0.0.0    EventTracingManagement
+Alias           Set-EtwTraceSession                                1.0.0.0    EventTracingManagement
+Alias           Set-ProvisionedAppPackageDataFile                  3.0        Dism
+Alias           Set-ProvisionedAppXDataFile                        3.0        Dism
+Alias           Write-FileSystemCache                              2.0.0.0    Storage
+Function        A:
+Function        Add-BitLockerKeyProtector                          1.0.0.0    BitLocker
+Function        Add-DnsClientNrptRule                              1.0.0.0    DnsClient
+Function        Add-DtcClusterTMMapping                            1.0.0.0    MsDtc
+Function        Add-EtwTraceProvider                               1.0.0.0    EventTracingManagement
+Function        Add-InitiatorIdToMaskingSet                        2.0.0.0    Storage
+Function        Add-MpPreference                                   1.0        ConfigDefender
+Function        Add-MpPreference                                   1.0        Defender
+Function        Add-NetEventNetworkAdapter                         1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventPacketCaptureProvider                  1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventProvider                               1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVFPProvider                            1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmNetworkAdapter                       1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmSwitch                               1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventVmSwitchProvider                       1.0.0.0    NetEventPacketCapture
+Function        Add-NetEventWFPCaptureProvider                     1.0.0.0    NetEventPacketCapture
+Function        Add-NetIPHttpsCertBinding                          1.0.0.0    NetworkTransition
+Function        Add-NetLbfoTeamMember                              2.0.0.0    NetLbfo
+Function        Add-NetLbfoTeamNic                                 2.0.0.0    NetLbfo
+Function        Add-NetNatExternalAddress                          1.0.0.0    NetNat
+Function        Add-NetNatStaticMapping                            1.0.0.0    NetNat
+Function        Add-NetSwitchTeamMember                            1.0.0.0    NetSwitchTeam
+Function        Add-OdbcDsn                                        1.0.0.0    Wdac
+Function        Add-PartitionAccessPath                            2.0.0.0    Storage
+Function        Add-PhysicalDisk                                   2.0.0.0    Storage
+Function        Add-Printer                                        1.1        PrintManagement
+Function        Add-PrinterDriver                                  1.1        PrintManagement
+Function        Add-PrinterPort                                    1.1        PrintManagement
+Function        Add-StorageFaultDomain                             2.0.0.0    Storage
+Function        Add-TargetPortToMaskingSet                         2.0.0.0    Storage
+Function        Add-VirtualDiskToMaskingSet                        2.0.0.0    Storage
+Function        Add-VpnConnection                                  2.0.0.0    VpnClient
+Function        Add-VpnConnectionRoute                             2.0.0.0    VpnClient
+Function        Add-VpnConnectionTriggerApplication                2.0.0.0    VpnClient
+Function        Add-VpnConnectionTriggerDnsConfiguration           2.0.0.0    VpnClient
+Function        Add-VpnConnectionTriggerTrustedNetwork             2.0.0.0    VpnClient
+Function        AfterAll                                           3.4.0      Pester
+Function        AfterEach                                          3.4.0      Pester
+Function        Assert-MockCalled                                  3.4.0      Pester
+Function        Assert-VerifiableMocks                             3.4.0      Pester
+Function        B:
+Function        Backup-BitLockerKeyProtector                       1.0.0.0    BitLocker
+Function        BackupToAAD-BitLockerKeyProtector                  1.0.0.0    BitLocker
+Function        BeforeAll                                          3.4.0      Pester
+Function        BeforeEach                                         3.4.0      Pester
+Function        Block-FileShareAccess                              2.0.0.0    Storage
+Function        Block-SmbShareAccess                               2.0.0.0    SmbShare
+Function        C:
+Function        cd..
+Function        cd\
+Function        Clear-BitLockerAutoUnlock                          1.0.0.0    BitLocker
+Function        Clear-Disk                                         2.0.0.0    Storage
+Function        Clear-DnsClientCache                               1.0.0.0    DnsClient
+Function        Clear-FileStorageTier                              2.0.0.0    Storage
+Function        Clear-Host
+Function        Clear-PcsvDeviceLog                                1.0.0.0    PcsvDevice
+Function        Clear-StorageBusDisk                               1.0.0.0    StorageBusCache
+Function        Clear-StorageDiagnosticInfo                        2.0.0.0    Storage
+Function        Close-SmbOpenFile                                  2.0.0.0    SmbShare
+Function        Close-SmbSession                                   2.0.0.0    SmbShare
+Function        Compress-Archive                                   1.0.1.0    Microsoft.PowerShell.Archive
+Function        Configuration                                      1.1        PSDesiredStateConfiguration
+Function        Connect-IscsiTarget                                1.0.0.0    iSCSI
+Function        Connect-VirtualDisk                                2.0.0.0    Storage
+Function        Context                                            3.4.0      Pester
+Function        ConvertFrom-SddlString                             3.1.0.0    Microsoft.PowerShell.Utility
+Function        Copy-NetFirewallRule                               2.0.0.0    NetSecurity
+Function        Copy-NetIPsecMainModeCryptoSet                     2.0.0.0    NetSecurity
+Function        Copy-NetIPsecMainModeRule                          2.0.0.0    NetSecurity
+Function        Copy-NetIPsecPhase1AuthSet                         2.0.0.0    NetSecurity
+Function        Copy-NetIPsecPhase2AuthSet                         2.0.0.0    NetSecurity
+Function        Copy-NetIPsecQuickModeCryptoSet                    2.0.0.0    NetSecurity
+Function        Copy-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        D:
+Function        Debug-FileShare                                    2.0.0.0    Storage
+Function        Debug-MMAppPrelaunch                               1.0        MMAgent
+Function        Debug-StorageSubSystem                             2.0.0.0    Storage
+Function        Debug-Volume                                       2.0.0.0    Storage
+Function        Describe                                           3.4.0      Pester
+Function        Disable-BitLocker                                  1.0.0.0    BitLocker
+Function        Disable-BitLockerAutoUnlock                        1.0.0.0    BitLocker
+Function        Disable-DAManualEntryPointSelection                1.0.0.0    DirectAccessClientComponents
+Function        Disable-DscDebug                                   1.1        PSDesiredStateConfiguration
+Function        Disable-MMAgent                                    1.0        MMAgent
+Function        Disable-NetAdapter                                 2.0.0.0    NetAdapter
+Function        Disable-NetAdapterBinding                          2.0.0.0    NetAdapter
+Function        Disable-NetAdapterChecksumOffload                  2.0.0.0    NetAdapter
+Function        Disable-NetAdapterEncapsulatedPacketTaskOffload    2.0.0.0    NetAdapter
+Function        Disable-NetAdapterIPsecOffload                     2.0.0.0    NetAdapter
+Function        Disable-NetAdapterLso                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterPacketDirect                     2.0.0.0    NetAdapter
+Function        Disable-NetAdapterPowerManagement                  2.0.0.0    NetAdapter
+Function        Disable-NetAdapterQos                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRdma                             2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRsc                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterRss                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterSriov                            2.0.0.0    NetAdapter
+Function        Disable-NetAdapterUso                              2.0.0.0    NetAdapter
+Function        Disable-NetAdapterVmq                              2.0.0.0    NetAdapter
+Function        Disable-NetDnsTransitionConfiguration              1.0.0.0    NetworkTransition
+Function        Disable-NetFirewallRule                            2.0.0.0    NetSecurity
+Function        Disable-NetIPHttpsProfile                          1.0.0.0    NetworkTransition
+Function        Disable-NetIPsecMainModeRule                       2.0.0.0    NetSecurity
+Function        Disable-NetIPsecRule                               2.0.0.0    NetSecurity
+Function        Disable-NetNatTransitionConfiguration              1.0.0.0    NetworkTransition
+Function        Disable-NetworkSwitchEthernetPort                  1.0.0.0    NetworkSwitchManager
+Function        Disable-NetworkSwitchFeature                       1.0.0.0    NetworkSwitchManager
+Function        Disable-NetworkSwitchVlan                          1.0.0.0    NetworkSwitchManager
+Function        Disable-OdbcPerfCounter                            1.0.0.0    Wdac
+Function        Disable-PhysicalDiskIdentification                 2.0.0.0    Storage
+Function        Disable-PnpDevice                                  1.0.0.0    PnpDevice
+Function        Disable-PSTrace                                    1.0.0.0    PSDiagnostics
+Function        Disable-PSWSManCombinedTrace                       1.0.0.0    PSDiagnostics
+Function        Disable-ScheduledTask                              1.0.0.0    ScheduledTasks
+Function        Disable-SmbDelegation                              2.0.0.0    SmbShare
+
+PS C:\WINDOWS\system32> Get-Process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    785      41    31700      38340      17.64   3472   2 ApplicationFrameHost
+    760      54    32820      31660      49.78   4384   2 atmgr
+    782      58    76096      34980      47.78  19124   2 atmgr
+   2608       9     1876       5788       0.50   3596   0 BTDevMgr
+    413      27    10044      14568       0.66  19304   2 concentr
+    121       8     6508       4724       0.05    820   2 conhost
+    118       7     6420       4172       0.02   5460   0 conhost
+    255      13     5432      14780      27.41   8972   2 conhost
+    265      14     7588      13224       1.91  12528   2 conhost
+    912      27     2036       4920       7.72    800   0 csrss
+    801      23     2600       5316      62.66  10444   2 csrss
+    492      16     5168      17116      22.25  13888   2 ctfmon
+    565      40    54932      25316       1.66   1792   2 CtxWebBrowser
+    405      29    15612      17732       1.22   9404   2 CtxWebBrowser
+    350      17     4780       8976       1.73    360   0 dasHost
+    203      17     3596       8900       0.20   5932   0 dllhost
+    245      16     3792       9104       0.81  18784   2 dllhost
+    122       7     1608       5528       0.66  20444   2 dllhost
+     81       6     1480       3652       0.78  10204   2 dptf_helper
+   1589      53   123452      96552     638.47  13420   2 dwm
+    129       8     1796       4740       0.02   3664   0 esif_uf
+   3325     114    93160     136208     335.41  13544   2 explorer
+     32       6     2476       2240       2.59   1028   0 fontdrvhost
+     32       8     6316       5132       2.19   8964   2 fontdrvhost
+    181      11     1748        192       0.17  13656   0 GoogleCrashHandler
+    160       9     1720        128       0.09  14148   0 GoogleCrashHandler64
+    256      17     5592       8580       6.25  17668   2 helper
+    551      33    39272      23648       3.52  18204   2 HPAudioSwitch
+    673      26    24888      32512     229.84  13280   0 HPCommRecovery
+    485      36    23408      15832       1.42  13040   0 HPJumpStartBridge
+    189      12     3988        356       0.47  11940   2 HPJumpStartLaunch
+    256      11     1732       6744      25.78  17712   2 HPMSGSVC
+    622      45    43188      23416       7.55  15352   0 HPSupportSolutionsFrameworkService
+    193      11     1604       7652       0.09  10896   0 HPWMISVC
+   1077      50    62684      54852       8.95  15612   2 HxOutlook
+    649      28    17756      19044      11.91   4452   2 HxTsr
+      0       0       60          8                 0   0 Idle
+    169       9     1780       6500       0.14   1876   0 igfxCUIService
+    579      26     7408      19460       2.08  20320   2 igfxEM
+    161       8     1504       5632       0.03   3620   0 IntelCpHDCPSvc
+    134       7     1364       5064       0.05   4256   0 IntelCpHeciSvc
+    158      10     1280       4376       0.08  12984   0 jhi_service
+    278      15     3360       7732       1.08  15404   0 LMS
+    531      25    13080      37312       2.22   8524   2 LockApp
+   1720      25     8620      16140      37.16    428   0 lsass
+    211      12     3044       1208       0.33   6028   0 mcapexe
+    422      20     8304      14492      12.16   2828   0 McCSPServiceHost
+    539      30    36500       6876       2.45   6264   0 mcshield
+    473      34    11368      22216       1.20  17624   2 McUICnt
+    170      12     2100       5432       3.63   3604   0 mDNSResponder
+      0       0     1668     459832     145.28   2552   0 Memory Compression
+    589      30    13080       7588       8.14   6064   0 MfeAVSvc
+    220      14     2672       7168       3.31   5168   0 mfefire
+    217      11     2848       6128       3.00   3816   0 mfemms
+    137       9     1872       4612       0.03   4816   0 mfevtps
+    280      11     6940       8592      51.64   4952   0 mfevtps
+    993      62    38040      89208      23.06  19156   2 Microsoft.Notes
+   1343      71   156632     198164      28.16  21840   2 Microsoft.Photos
+   1273      54    32012      37200      40.95   4920   0 MMSSHOST
+   1035      49    33368      42656      21.73   3892   0 ModuleCoreService
+    408      30    11976       8416       4.55   6616   2 ModuleCoreService
+    316      19    24060      36148       0.67   3540   2 msedge
+    413      19    20208      36208      50.59   6248   2 msedge
+    331      21    55888      76328      20.70   9132   2 msedge
+   1539      64    71568     136496      99.30  14380   2 msedge
+    155       9     1720       5720       0.17  15704   2 msedge
+    873      26   136504     128432      95.16  17564   2 msedge
+    375      25    61908      98724      56.95  18936   2 msedge
+    222      14    11376      21616       0.16  22148   2 msedge
+   5939      84  1288000     396832   1,081.92   4512   0 MsMpEng
+    196      11     5164       8268       5.73   1896   0 NisSrv
+    265      14     3024      15504       3.45   3996   2 notepad
+    743      28    37008      29992      11.33   3656   0 OfficeClickToRun
+    816      48    20464      40488      22.67   2912   2 OneDrive
+    256      14     3392       1820       0.22   3908   0 PEFService
+   1153      54   153220        448       1.38  13460   2 PeopleApp
+    654      34    70320      72132       6.83  21012   2 powershell
+    233      27    30968      13136       0.67   8544   0 PresentationFontCache
+    119       8     4020       5888       0.08  17340   2 python
+    511      37     7560      16380     103.33  15388   2 Receiver
+    270      18    39700      16428       0.45  17356   2 ReceiverProxy
+    349      13     1884       6712       2.03  18968   2 redirector
+      0      26    11452      62428       5.47     96   0 Registry
+    207       9     1944       6284       0.23   2636   0 RtkAudioService64
+    163       9     1980       5728       0.23   3928   0 RtkBtManServ
+    416      15     4604      10600       0.66   3836   2 RtkNGUI64
+    225      17     4140       8228       0.27   7004   2 RtlS5Wake
+    146       9     2048       6952       0.06   1048   2 RuntimeBroker
+    450      19     5568      21184       2.47   3856   2 RuntimeBroker
+    379      23     7708      22216      67.17   4204   2 RuntimeBroker
+    383      22     9564      27528       7.06   9060   2 RuntimeBroker
+    150       9     2292       7380       0.11  10120   2 RuntimeBroker
+    368      19     6564      22308       8.89  10512   2 RuntimeBroker
+    401      18     6032      18796       1.78  11892   2 RuntimeBroker
+    286      13     3684      17104       1.56  12172   2 RuntimeBroker
+    792      38    20444      38344      24.66  13720   2 RuntimeBroker
+    376      21     6756      23536       1.45  19960   2 RuntimeBroker
+    747      28    17260      40696      18.38  20372   2 RuntimeBroker
+    122       8     1536       5836       0.05  20676   2 RuntimeBroker
+    120       7     1472       5980       0.06  22340   2 RuntimeBroker
+    475      34    82240      58432      87.94  16112   2 SAntivirusClient
+   1003      26     9432      15108     991.39   4472   0 SAntivirusIC
+    949      53   115780      76196     820.22   4480   0 SAntivirusService
+    991      78    50768      50760      86.95   8776   0 SearchIndexer
+   2031     137   169372      87592      98.28  14488   2 SearchUI
+    451      16     4924      12924       1.59  13068   0 SecurityHealthService
+    153       9     1740       7012       0.17   9084   2 SecurityHealthSystray
+    824      54    36756      36752       3.73  17860   2 SelfService
+    419      28    16740      20848       1.97  13364   2 SelfServicePlugin
+    839      12     7792       8836   4,867.67     76   0 services
+    523      27    14748       4604      90.95   5468   2 SettingSyncHost
+     89       7     4060       6048       0.91  15448   0 SgrmBroker
+    913      38    31796      50616       9.67   7132   2 ShellExperienceHost
+    849      23    13192      35020      41.03   6296   2 sihost
+    367      22    10728      16044       1.17   2040   2 Skype
+    828      48    30584      46012      34.78   6936   2 Skype
+    258      18    11352      10052       0.38  15624   2 Skype
+    531      32    56224      23816       1.08  18436   2 Skype
+    444      56   117928      35736       5.38  19868   2 Skype
+    640      30    88632      38544       7.56   4028   2 Slack
+    807      41    42144      66516      93.33   8168   2 Slack
+    365      31   116776      80744     103.11  14500   2 Slack
+    442      22    14276      22968      13.98  15628   2 Slack
+    227      15    10196      10996       0.34  19560   2 Slack
+     53       3     1180        916       0.31    468   0 smss
+    436      21     5328       9312       0.47   3284   0 spoolsv
+    739      34    43660      74160      59.86   8204   2 StartMenuExperienceHost
+    287      17     3260       7668      88.30    612   0 svchost
+    109       8     1504       4640      17.06    704   0 svchost
+   2133      25    17684      31372     174.58    740   0 svchost
+   1605      21    12804      17568     237.83   1176   0 svchost
+    352      13     3568       7932      34.14   1224   0 svchost
+    209      16     2228       6900      66.03   1384   0 svchost
+    201      14     2264       9288      57.27   1392   0 svchost
+    279      16     2920       9216      74.83   1408   0 svchost
+    273      14     3052       9244      35.16   1428   0 svchost
+    180      11     2656      10188      56.81   1516   0 svchost
+    305      11     2576       8020      25.61   1580   0 svchost
+    196      10     2340       6792      50.36   1664   0 svchost
+    194      13     2268       7584      29.33   1820   0 svchost
+    456      14    15640      14072     152.22   1944   0 svchost
+    229      13    10608      10432       6.56   1976   0 svchost
+    208      12     2332       7444      73.92   2032   0 svchost
+    186      37     6972       6576      46.69   2068   0 svchost
+    247      11     2876       6912     109.00   2092   0 svchost
+    399      17     5616      11260     109.20   2144   0 svchost
+    261      16   106820     107040     666.13   2192   0 svchost
+    290       8     1740       5632      24.80   2200   0 svchost
+    422      20     7056      14104      52.02   2280   0 svchost
+    162      11     2148       7328      24.33   2316   0 svchost
+    235      10     2288       7076      26.83   2372   0 svchost
+    173      12     2236       7028      55.44   2380   0 svchost
+    919      12     3400       9440      40.84   2496   0 svchost
+    494      16     4712      15392     134.48   2520   0 svchost
+    317      16     4016       8184     272.36   2620   0 svchost
+    901      16     3708       8780     102.11   2816   0 svchost
+    258      11    10124      16100     163.97   2856   0 svchost
+    208      13     3268      10428      41.94   2872   0 svchost
+    405      19     3036       8808      87.73   3032   0 svchost
+    154      14     2076       6168      66.02   3040   0 svchost
+    213      11     2572       7128      63.33   3080   0 svchost
+    556      24     7448      16560      82.78   3172   0 svchost
+    266      16     3172      12368      37.50   3216   0 svchost
+    560      25     5228      13440      70.03   3308   0 svchost
+    218      11     2288       7152      21.95   3420   0 svchost
+    455      33    13460      13676     136.20   3456   0 svchost
+    198      11     2328       6884      72.91   3532   0 svchost
+    463      34     4916      12860     118.81   3612   0 svchost
+    560      40    20608      26352      14.11   3628   0 svchost
+    239      12     2488       8064      34.70   3640   0 svchost
+    189       8     2180       5672      43.61   3648   0 svchost
+    414      24    38316      43096     245.73   3672   0 svchost
+    281      15     3064       7052      31.34   3744   0 svchost
+    518      20     9700      17956     114.63   3780   0 svchost
+    245      16     2604       6484      70.52   3796   0 svchost
+    141       9     1840       6196      59.64   3800   0 svchost
+    441      21     5680      19960      66.95   3980   0 svchost
+    253      15     2904       7420      66.66   4000   0 svchost
+    151      11     1652       5320      22.72   4016   0 svchost
+    327      17     4048      15204      61.06   4104   0 svchost
+    148      10     1968       5448      58.03   4116   0 svchost
+    136       8     1724       7100       0.08   4400   0 svchost
+    483      28     6356      18144     227.17   4560   0 svchost
+    219      13     2684       8120      38.30   4580   0 svchost
+    448      28     4184      11756      56.98   4600   0 svchost
+    314      16     4880      16128      83.67   4768   0 svchost
+    157      10     1980       6136      60.09   6848   0 svchost
+    202      12     2412       7628      32.02   7616   0 svchost
+    134       9     1716       5684       4.44   7892   0 svchost
+    192      10     2180       6848      21.52   7948   0 svchost
+    450      20     4984      15720      64.45   8556   0 svchost
+    245      14     3204      10176      58.81   9688   0 svchost
+    554      27     6544      16680     174.11   9708   2 svchost
+    318      15     5248      13044     118.53  10192   0 svchost
+    526      30    10332      16760      40.44  10296   0 svchost
+    239      12     2828       7360      59.41  10844   0 svchost
+    398      18     4588      23404      74.03  10920   2 svchost
+    330      18    15560      15364      52.45  11728   0 svchost
+    376      17     4496      15732       0.56  13264   0 svchost
+    300      13     5112       9508      27.36  13376   0 svchost
+    213      12     2388       8188      11.92  13480   0 svchost
+    317      12     2552      10700      32.28  14176   0 svchost
+    275      16     3892      12316      45.73  14564   0 svchost
+    336      13     3572       8568       0.69  15220   0 svchost
+    241      13     3228       9152      28.78  15788   0 svchost
+    325      17     5248      14596      57.22  15924   0 svchost
+    621      27    10796      35228     375.42  15976   2 svchost
+    486      19    10320      23408     127.55  16188   2 svchost
+    142       9     2056       6056      13.36  16368   0 svchost
+    478      18     8528      15404      39.28  18172   0 svchost
+    448      16     3932      11408      81.28  19260   0 svchost
+    893      88    59288      48016     156.08  19480   0 svchost
+    143       9     1624       7012       0.02  19692   0 svchost
+    501    4459     8380      16120     229.58  15344   2 SynTPEnh
+    343      12     3496       7028       0.23   2008   0 SynTPEnhService
+   5268       0      216       6260   1,539.45      4   0 System
+    844      39    21268         20       1.25  20976   2 SystemSettings
+    467      23     7804      22816       2.19  16336   2 SystemSettingsBroker
+    342      35     8116      15488       3.61  11916   2 taskhostw
+    394      41     6444      14076       2.95   3960   0 TeamViewer_Service
+    221      14     2988      10456       0.27   6880   2 unsecapp
+    122       9     1772       6672       0.05  19348   2 UserOOBEBroker
+    395      45     9280      11132      15.63  13620   2 utweb
+    648      35    18344        188       0.63   8744   2 Video.UI
+    360      28     4576      12236       1.52  11460   2 wfcrun32
+    496      24     6384      14768      25.69   3968   0 WildTangentHelperService
+    519      22    12196      33844       4.22  16108   2 WindowsInternal.ComposableShell.Experiences.TextInput.Inpu...
+    160      11     1528       5336       0.17    912   0 wininit
+    276      12     2568       8664       0.69  19688   2 winlogon
+    900      57    33336        296       1.39   8520   2 WinStore.App
+    185      10     2352       6052       0.94   5448   0 wlanext
+    235      14     2908       9100       0.14  10668   0 WmiApSrv
+    200      13     3540       8300       1.53  14316   0 WmiPrvSE
+   1297      44   104000       2520      20.13  19948   2 wps
+    303      13     3848       8988       0.63    792   0 WUDFHost
+    496      37    19756      30644       0.61   6544   2 YourPhone
+
+
+PS C:\WINDOWS\system32> ^C
+
+PS C:\WINDOWS\system32> Get-Alias                                                                                       
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           % -> ForEach-Object
+Alias           ? -> Where-Object
+Alias           ac -> Add-Content
+Alias           asnp -> Add-PSSnapin
+Alias           cat -> Get-Content
+Alias           cd -> Set-Location
+Alias           CFS -> ConvertFrom-String                          3.1.0.0    Microsoft.PowerShell.Utility
+Alias           chdir -> Set-Location
+Alias           clc -> Clear-Content
+Alias           clear -> Clear-Host
+Alias           clhy -> Clear-History
+Alias           cli -> Clear-Item
+Alias           clp -> Clear-ItemProperty
+Alias           cls -> Clear-Host
+Alias           clv -> Clear-Variable
+Alias           cnsn -> Connect-PSSession
+Alias           compare -> Compare-Object
+Alias           copy -> Copy-Item
+Alias           cp -> Copy-Item
+Alias           cpi -> Copy-Item
+Alias           cpp -> Copy-ItemProperty
+Alias           curl -> Invoke-WebRequest
+Alias           cvpa -> Convert-Path
+Alias           dbp -> Disable-PSBreakpoint
+Alias           del -> Remove-Item
+Alias           diff -> Compare-Object
+Alias           dir -> Get-ChildItem
+Alias           dnsn -> Disconnect-PSSession
+Alias           ebp -> Enable-PSBreakpoint
+Alias           echo -> Write-Output
+Alias           epal -> Export-Alias
+Alias           epcsv -> Export-Csv
+Alias           epsn -> Export-PSSession
+Alias           erase -> Remove-Item
+Alias           etsn -> Enter-PSSession
+Alias           exsn -> Exit-PSSession
+Alias           fc -> Format-Custom
+Alias           fhx -> Format-Hex                                  3.1.0.0    Microsoft.PowerShell.Utility
+Alias           fl -> Format-List
+Alias           foreach -> ForEach-Object
+Alias           ft -> Format-Table
+Alias           fw -> Format-Wide
+Alias           gal -> Get-Alias
+Alias           gbp -> Get-PSBreakpoint
+Alias           gc -> Get-Content
+Alias           gcb -> Get-Clipboard                               3.1.0.0    Microsoft.PowerShell.Management
+Alias           gci -> Get-ChildItem
+Alias           gcm -> Get-Command
+Alias           gcs -> Get-PSCallStack
+Alias           gdr -> Get-PSDrive
+Alias           ghy -> Get-History
+Alias           gi -> Get-Item
+Alias           gin -> Get-ComputerInfo                            3.1.0.0    Microsoft.PowerShell.Management
+Alias           gjb -> Get-Job
+Alias           gl -> Get-Location
+Alias           gm -> Get-Member
+Alias           gmo -> Get-Module
+Alias           gp -> Get-ItemProperty
+Alias           gps -> Get-Process
+Alias           gpv -> Get-ItemPropertyValue
+Alias           group -> Group-Object
+Alias           gsn -> Get-PSSession
+Alias           gsnp -> Get-PSSnapin
+Alias           gsv -> Get-Service
+Alias           gtz -> Get-TimeZone                                3.1.0.0    Microsoft.PowerShell.Management
+Alias           gu -> Get-Unique
+Alias           gv -> Get-Variable
+Alias           gwmi -> Get-WmiObject
+Alias           h -> Get-History
+Alias           history -> Get-History
+Alias           icm -> Invoke-Command
+Alias           iex -> Invoke-Expression
+Alias           ihy -> Invoke-History
+Alias           ii -> Invoke-Item
+Alias           ipal -> Import-Alias
+Alias           ipcsv -> Import-Csv
+Alias           ipmo -> Import-Module
+Alias           ipsn -> Import-PSSession
+Alias           irm -> Invoke-RestMethod
+Alias           ise -> powershell_ise.exe
+Alias           iwmi -> Invoke-WmiMethod
+Alias           iwr -> Invoke-WebRequest
+Alias           kill -> Stop-Process
+Alias           lp -> Out-Printer
+Alias           ls -> Get-ChildItem
+Alias           man -> help
+Alias           md -> mkdir
+Alias           measure -> Measure-Object
+Alias           mi -> Move-Item
+Alias           mount -> New-PSDrive
+Alias           move -> Move-Item
+Alias           mp -> Move-ItemProperty
+Alias           mv -> Move-Item
+Alias           nal -> New-Alias
+Alias           ndr -> New-PSDrive
+Alias           ni -> New-Item
+Alias           nmo -> New-Module
+Alias           npssc -> New-PSSessionConfigurationFile
+Alias           nsn -> New-PSSession
+Alias           nv -> New-Variable
+Alias           ogv -> Out-GridView
+Alias           oh -> Out-Host
+Alias           popd -> Pop-Location
+Alias           ps -> Get-Process
+Alias           pushd -> Push-Location
+Alias           pwd -> Get-Location
+Alias           r -> Invoke-History
+Alias           rbp -> Remove-PSBreakpoint
+Alias           rcjb -> Receive-Job
+Alias           rcsn -> Receive-PSSession
+Alias           rd -> Remove-Item
+Alias           rdr -> Remove-PSDrive
+Alias           ren -> Rename-Item
+Alias           ri -> Remove-Item
+Alias           rjb -> Remove-Job
+Alias           rm -> Remove-Item
+Alias           rmdir -> Remove-Item
+Alias           rmo -> Remove-Module
+Alias           rni -> Rename-Item
+Alias           rnp -> Rename-ItemProperty
+Alias           rp -> Remove-ItemProperty
+Alias           rsn -> Remove-PSSession
+Alias           rsnp -> Remove-PSSnapin
+Alias           rujb -> Resume-Job
+Alias           rv -> Remove-Variable
+Alias           rvpa -> Resolve-Path
+Alias           rwmi -> Remove-WmiObject
+Alias           sajb -> Start-Job
+Alias           sal -> Set-Alias
+Alias           saps -> Start-Process
+Alias           sasv -> Start-Service
+Alias           sbp -> Set-PSBreakpoint
+Alias           sc -> Set-Content
+Alias           scb -> Set-Clipboard                               3.1.0.0    Microsoft.PowerShell.Management
+Alias           select -> Select-Object
+Alias           set -> Set-Variable
+Alias           shcm -> Show-Command
+Alias           si -> Set-Item
+Alias           sl -> Set-Location
+Alias           sleep -> Start-Sleep
+Alias           sls -> Select-String
+Alias           sort -> Sort-Object
+Alias           sp -> Set-ItemProperty
+Alias           spjb -> Stop-Job
+Alias           spps -> Stop-Process
+Alias           spsv -> Stop-Service
+Alias           start -> Start-Process
+Alias           stz -> Set-TimeZone                                3.1.0.0    Microsoft.PowerShell.Management
+Alias           sujb -> Suspend-Job
+Alias           sv -> Set-Variable
+Alias           swmi -> Set-WmiInstance
+Alias           tee -> Tee-Object
+Alias           trcm -> Trace-Command
+Alias           type -> Get-Content
+Alias           wget -> Invoke-WebRequest
+Alias           where -> Where-Object
+Alias           wjb -> Wait-Job
+Alias           write -> Write-Output
+
+
+PS C:\WINDOWS\system32>                                                                                                 
+
+
+
